@@ -1,6 +1,7 @@
 	<!DOCTYPE html>
 	@include('layouts.head')
 		<body>
+        <div id="app">
 			<header id="header">
 				<div class="header-top">
 					<div class="container">
@@ -42,8 +43,8 @@
 					</div>
 				</div>
 			</header><!-- #header -->
-
             @yield('content')
+        </div>
             @include('layouts.Footer')
 			@include('layouts.js')
 		</body>

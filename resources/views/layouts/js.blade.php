@@ -12,5 +12,5 @@
 <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('js/mail-script.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
-
+<script src="{{ asset('js/app.js') }}" defer></script>
 @yield('js_custom')
