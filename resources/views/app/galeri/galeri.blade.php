@@ -1,7 +1,7 @@
 @extends('layouts.web')
 
 @section('content')
-
+@include('layouts.TopBanner')
     <!-- Start other-issue Area -->
     <section class="other-issue-area section-gap">
         <div class="container">

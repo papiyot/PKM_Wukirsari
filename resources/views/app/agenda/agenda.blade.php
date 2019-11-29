@@ -1,7 +1,7 @@
 @extends('layouts.web')
 
 @section('content')
-
+@include('layouts.TopBanner')
     <!-- Start popular-destination Area -->
     <section class="popular-destination-area section-gap">
         <div class="container">

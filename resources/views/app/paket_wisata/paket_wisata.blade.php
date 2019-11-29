@@ -1,7 +1,7 @@
 @extends('layouts.web')
 
 @section('content')
-
+@include('layouts.TopBanner')
     <!-- Start price Area -->
     <section class="price-area section-gap">
         <div class="container">

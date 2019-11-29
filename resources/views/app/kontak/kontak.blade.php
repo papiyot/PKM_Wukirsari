@@ -1,7 +1,7 @@
 @extends('layouts.web')
 
 @section('content')
-
+@include('layouts.TopBanner')
     <!-- Start home-about Area -->
     <section class="home-about-area">
         <div class="container-fluid">
