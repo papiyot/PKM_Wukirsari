@@ -25,7 +25,7 @@
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
 				          <li><a href="{{ url('/') }}">Beranda</a></li>
-				          <li><a href="{{ url('/agenda') }}">Agenda</a></li>
+				          <li><a href="{{ url('/rencana') }}">Rencana Wisata</a></li>
 				          <li><a href="{{ url('/paket') }}">Paket Wisata</a></li>
 				          <li><a href="{{ url('/galeri') }}">Galeri</a></li>
 				          <li><a href="{{ url('/kontak') }}">Contact Person</a></li>

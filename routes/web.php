@@ -14,8 +14,8 @@
 Route::get('/', function () {
     return view('app.beranda.beranda');
 });
-Route::get('/agenda', function () {
-    return view('app.agenda.agenda');
+Route::get('/rencana', function () {
+    return view('app.rencana.rencana');
 });
 Route::get('/galeri', function () {
     return view('app.galeri.galeri');
