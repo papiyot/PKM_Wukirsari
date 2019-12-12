@@ -13,6 +13,7 @@
         "laravel/framework": "^6.2",
         "laravel/socialite": "^4.3",
         "laravel/tinker": "^1.0",
+        "pursehouse/modeler-laravel-eloquent": "dev-master",
         "spatie/laravel-permission": "^3.2"
     },
     "require-dev": {
@@ -60,5 +61,11 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
+    },
+    "repositories": {
+        "pursehouse/modeler-laravel-eloquent": {
+            "type": "vcs",
+            "url": "https://github.com/pursehouse/modeler-laravel-eloquent"
+        }
     }
 }
