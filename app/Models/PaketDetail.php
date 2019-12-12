@@ -27,17 +27,14 @@ class PaketDetail extends \Illuminate\Database\Eloquent\Model
 {
 	protected $table = 'paket_detail';
 	protected $primaryKey = 'paket_detail_id';
-	public $incrementing = false;
 
 	protected $casts = [
-		'paket_detail_id' => 'int',
 		'paket_detail_paket_id' => 'int',
 		'paket_detail_objek_id' => 'int',
 		'paket_detail_biaya' => 'float'
 	];
 
 	protected $fillable = [
-		'paket_detail_id',
 		'paket_detail_paket_id',
 		'paket_detail_objek_id',
 		'paket_detail_biaya'

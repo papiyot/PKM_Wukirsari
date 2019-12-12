@@ -14,7 +14,7 @@ class CreateTiketPembayaranTable extends Migration
     public function up()
     {
         Schema::create('tiket_pembayaran', function (Blueprint $table) {
-            $table->integer('tiket_pembayaran_id')->primary();
+            $table->integer('tiket_pembayaran_id')->autoIncrement();
             $table->integer('tiket_pembayaran_tiket_id');
             $table->foreign('tiket_pembayaran_tiket_id')->references('tiket_id')->on('tiket')->onUpdate('cascade')->onDelete('cascade');
             $table->date('tiket_pembayaran_tanggal');

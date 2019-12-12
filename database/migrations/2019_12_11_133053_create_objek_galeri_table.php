@@ -14,7 +14,7 @@ class CreateObjekGaleriTable extends Migration
     public function up()
     {
         Schema::create('objek_galeri', function (Blueprint $table) {
-            $table->integer('objek_galeri_id')->primary();
+            $table->integer('objek_galeri_id')->autoIncrement();
             $table->integer('objek_galeri_objek_id');
             $table->foreign('objek_galeri_objek_id')->references('objek_id')->on('objek')->onUpdate('cascade')->onDelete('cascade');
             $table->string('objek_galeri_letak');

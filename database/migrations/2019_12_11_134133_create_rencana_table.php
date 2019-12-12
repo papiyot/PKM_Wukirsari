@@ -14,7 +14,7 @@ class CreateRencanaTable extends Migration
     public function up()
     {
         Schema::create('rencana', function (Blueprint $table) {
-            $table->integer('rencana_id')->primary();
+            $table->integer('rencana_id')->autoIncrement();
             $table->string('rencana_nama');
             $table->date('rencana_pelaksanaan');
             $table->char('rencana_jenis', 1);

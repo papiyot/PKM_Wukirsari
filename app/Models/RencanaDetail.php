@@ -28,10 +28,8 @@ class RencanaDetail extends \Illuminate\Database\Eloquent\Model
 {
 	protected $table = 'rencana_detail';
 	protected $primaryKey = 'rencana_detail_id';
-	public $incrementing = false;
 
 	protected $casts = [
-		'rencana_detail_id' => 'int',
 		'rencana_detail_rencana_id' => 'int',
 		'rencana_detail_objek_id' => 'int',
 		'rencana_detail_peserta' => 'int',
@@ -39,7 +37,6 @@ class RencanaDetail extends \Illuminate\Database\Eloquent\Model
 	];
 
 	protected $fillable = [
-		'rencana_detail_id',
 		'rencana_detail_rencana_id',
 		'rencana_detail_objek_id',
 		'rencana_detail_peserta',

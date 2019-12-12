@@ -14,9 +14,9 @@ class CreatePaketTable extends Migration
     public function up()
     {
         Schema::create('paket', function (Blueprint $table) {
-            $table->integer('paket_id')->primary();
+            $table->integer('paket_id')->autoIncrement();
             $table->string('paket_nama');
-            $table->text('paket_letak_deskripsi');
+            $table->text('paket_letak_deskripsi')->nullable();
             $table->float('paket_biaya');
             $table->timestamps();
         });

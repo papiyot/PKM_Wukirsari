@@ -29,10 +29,8 @@ class Rencana extends \Illuminate\Database\Eloquent\Model
 {
 	protected $table = 'rencana';
 	protected $primaryKey = 'rencana_id';
-	public $incrementing = false;
 
 	protected $casts = [
-		'rencana_id' => 'int',
 		'rencana_peserta' => 'int',
 		'rencana_by' => 'int'
 	];
@@ -42,7 +40,6 @@ class Rencana extends \Illuminate\Database\Eloquent\Model
 	];
 
 	protected $fillable = [
-		'rencana_id',
 		'rencana_nama',
 		'rencana_pelaksanaan',
 		'rencana_jenis',

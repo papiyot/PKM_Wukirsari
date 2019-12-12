@@ -26,15 +26,12 @@ class ObjekGaleri extends \Illuminate\Database\Eloquent\Model
 {
 	protected $table = 'objek_galeri';
 	protected $primaryKey = 'objek_galeri_id';
-	public $incrementing = false;
 
 	protected $casts = [
-		'objek_galeri_id' => 'int',
 		'objek_galeri_objek_id' => 'int'
 	];
 
 	protected $fillable = [
-		'objek_galeri_id',
 		'objek_galeri_objek_id',
 		'objek_galeri_letak'
 	];

@@ -14,12 +14,12 @@ class CreateTiketResponTable extends Migration
     public function up()
     {
         Schema::create('tiket_respon', function (Blueprint $table) {
-            $table->integer('tiket_respon_id')->primary();
+            $table->integer('tiket_respon_id')->autoIncrement();
             $table->integer('tiket_respon_tiket_id');
             $table->foreign('tiket_respon_tiket_id')->references('tiket_id')->on('tiket')->onUpdate('cascade')->onDelete('cascade');
-            $table->float('tiket_respon_persentase');
-            $table->string('tiket_respon_alias');
-            $table->string('tiket_respon_letak_respon');
+            $table->float('tiket_respon_persentase')->nullable();
+            $table->string('tiket_respon_alias')->nullable();
+            $table->string('tiket_respon_letak_respon')->nullable();
             $table->integer('tiket_respon_objek_galeri_id');
             $table->foreign('tiket_respon_objek_galeri_id')->references('objek_galeri_id')->on('objek_galeri')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();

@@ -27,10 +27,8 @@ class TiketPembayaran extends \Illuminate\Database\Eloquent\Model
 {
 	protected $table = 'tiket_pembayaran';
 	protected $primaryKey = 'tiket_pembayaran_id';
-	public $incrementing = false;
 
 	protected $casts = [
-		'tiket_pembayaran_id' => 'int',
 		'tiket_pembayaran_tiket_id' => 'int'
 	];
 
@@ -39,7 +37,6 @@ class TiketPembayaran extends \Illuminate\Database\Eloquent\Model
 	];
 
 	protected $fillable = [
-		'tiket_pembayaran_id',
 		'tiket_pembayaran_tiket_id',
 		'tiket_pembayaran_tanggal',
 		'tiket_pembayaran_metode',

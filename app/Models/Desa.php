@@ -26,14 +26,8 @@ class Desa extends \Illuminate\Database\Eloquent\Model
 {
 	protected $table = 'desa';
 	protected $primaryKey = 'desa_id';
-	public $incrementing = false;
-
-	protected $casts = [
-		'desa_id' => 'int'
-	];
 
 	protected $fillable = [
-		'desa_id',
 		'desa_nama',
 		'desa_alamat',
 		'desa_koordinat'

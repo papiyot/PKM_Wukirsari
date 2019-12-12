@@ -26,15 +26,12 @@ class Paket extends \Illuminate\Database\Eloquent\Model
 {
 	protected $table = 'paket';
 	protected $primaryKey = 'paket_id';
-	public $incrementing = false;
 
 	protected $casts = [
-		'paket_id' => 'int',
 		'paket_biaya' => 'float'
 	];
 
 	protected $fillable = [
-		'paket_id',
 		'paket_nama',
 		'paket_letak_deskripsi',
 		'paket_biaya'

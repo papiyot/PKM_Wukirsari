@@ -29,17 +29,14 @@ class TiketRespon extends \Illuminate\Database\Eloquent\Model
 {
 	protected $table = 'tiket_respon';
 	protected $primaryKey = 'tiket_respon_id';
-	public $incrementing = false;
 
 	protected $casts = [
-		'tiket_respon_id' => 'int',
 		'tiket_respon_tiket_id' => 'int',
 		'tiket_respon_persentase' => 'float',
 		'tiket_respon_objek_galeri_id' => 'int'
 	];
 
 	protected $fillable = [
-		'tiket_respon_id',
 		'tiket_respon_tiket_id',
 		'tiket_respon_persentase',
 		'tiket_respon_alias',

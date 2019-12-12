@@ -29,12 +29,6 @@ namespace App\Models;
  */
 class User extends \Illuminate\Database\Eloquent\Model
 {
-	public $incrementing = false;
-
-	protected $casts = [
-		'id' => 'int'
-	];
-
 	protected $dates = [
 		'email_verified_at'
 	];
@@ -45,7 +39,6 @@ class User extends \Illuminate\Database\Eloquent\Model
 	];
 
 	protected $fillable = [
-		'id',
 		'name',
 		'email',
 		'email_verified_at',

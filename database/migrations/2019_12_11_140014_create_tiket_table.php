@@ -14,7 +14,7 @@ class CreateTiketTable extends Migration
     public function up()
     {
         Schema::create('tiket', function (Blueprint $table) {
-            $table->integer('tiket_id')->primary();
+            $table->integer('tiket_id')->autoIncrement();
             $table->date('tiket_pesan');
             $table->float('tiket_biaya');
             $table->integer('tiket_jumlah');

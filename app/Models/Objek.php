@@ -32,16 +32,13 @@ class Objek extends \Illuminate\Database\Eloquent\Model
 {
 	protected $table = 'objek';
 	protected $primaryKey = 'objek_id';
-	public $incrementing = false;
 
 	protected $casts = [
-		'objek_id' => 'int',
 		'objek_desa_id' => 'int',
 		'objek_biaya' => 'float'
 	];
 
 	protected $fillable = [
-		'objek_id',
 		'objek_desa_id',
 		'objek_nama',
 		'objek_alamat',

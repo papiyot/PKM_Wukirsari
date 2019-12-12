@@ -14,7 +14,7 @@ class CreatePaketDetailTable extends Migration
     public function up()
     {
         Schema::create('paket_detail', function (Blueprint $table) {
-            $table->integer('paket_detail_id')->primary();
+            $table->integer('paket_detail_id')->autoIncrement();
             $table->integer('paket_detail_paket_id');
             $table->foreign('paket_detail_paket_id')->references('paket_id')->on('paket')->onUpdate('cascade')->onDelete('cascade');
             $table->integer('paket_detail_objek_id');

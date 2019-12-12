@@ -14,7 +14,7 @@ class CreateRencanaDetailTable extends Migration
     public function up()
     {
         Schema::create('rencana_detail', function (Blueprint $table) {
-            $table->integer('rencana_detail_id')->primary();
+            $table->integer('rencana_detail_id')->autoIncrement();
             $table->integer('rencana_detail_rencana_id');
             $table->foreign('rencana_detail_rencana_id')->references('rencana_id')->on('rencana')->onUpdate('cascade')->onDelete('cascade');
             $table->integer('rencana_detail_objek_id');

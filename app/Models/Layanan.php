@@ -29,16 +29,13 @@ class Layanan extends \Illuminate\Database\Eloquent\Model
 {
 	protected $table = 'layanan';
 	protected $primaryKey = 'layanan_id';
-	public $incrementing = false;
 
 	protected $casts = [
-		'layanan_id' => 'int',
 		'layanan_objek_id' => 'int',
 		'layanan_biaya' => 'float'
 	];
 
 	protected $fillable = [
-		'layanan_id',
 		'layanan_objek_id',
 		'layanan_nama',
 		'layanan_deskripsi',

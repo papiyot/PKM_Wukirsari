@@ -30,10 +30,8 @@ class Tiket extends \Illuminate\Database\Eloquent\Model
 {
 	protected $table = 'tiket';
 	protected $primaryKey = 'tiket_id';
-	public $incrementing = false;
 
 	protected $casts = [
-		'tiket_id' => 'int',
 		'tiket_biaya' => 'float',
 		'tiket_jumlah' => 'int',
 		'tiket_diskon' => 'float',
@@ -45,7 +43,6 @@ class Tiket extends \Illuminate\Database\Eloquent\Model
 	];
 
 	protected $fillable = [
-		'tiket_id',
 		'tiket_pesan',
 		'tiket_biaya',
 		'tiket_jumlah',

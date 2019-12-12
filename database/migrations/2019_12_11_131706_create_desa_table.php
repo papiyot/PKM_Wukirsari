@@ -14,10 +14,10 @@ class CreateDesaTable extends Migration
     public function up()
     {
         Schema::create('desa', function (Blueprint $table) {
-            $table->integer('desa_id')->primary();
+            $table->integer('desa_id')->autoIncrement();
             $table->string('desa_nama');
-            $table->text('desa_alamat');
-            $table->string('desa_koordinat');
+            $table->text('desa_alamat')->nullable();
+            $table->string('desa_koordinat')->nullable();
             $table->timestamps();
         });
     }
