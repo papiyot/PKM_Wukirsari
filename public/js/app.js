@@ -1927,6 +1927,166 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PaketComponent.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/PaketComponent.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "PaketComponent"
+});
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/material-icons/iconfont/material-icons.css":
 /*!*************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/material-icons/iconfont/material-icons.css ***!
@@ -20534,6 +20694,261 @@ var render = function() {
   )
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PaketComponent.vue?vue&type=template&id=602e015f&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/PaketComponent.vue?vue&type=template&id=602e015f&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "active-recent-blog-carusel" }, [
+        _c("div", { staticClass: "single-recent-blog-post item" }, [
+          _c("div", { staticClass: "thumb" }, [
+            _c("img", {
+              staticClass: "img-fluid",
+              attrs: { src: "img/b1.jpg", alt: "" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "details" }, [
+            _c("div", { staticClass: "tags" }, [
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Travel")])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Life Style")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "#" } }, [
+              _c("h4", { staticClass: "title" }, [
+                _vm._v("Low Cost Advertising")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n                    Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("h6", { staticClass: "date" }, [_vm._v("31st January,2018")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "single-recent-blog-post item" }, [
+          _c("div", { staticClass: "thumb" }, [
+            _c("img", {
+              staticClass: "img-fluid",
+              attrs: { src: "img/b2.jpg", alt: "" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "details" }, [
+            _c("div", { staticClass: "tags" }, [
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Travel")])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Life Style")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "#" } }, [
+              _c("h4", { staticClass: "title" }, [
+                _vm._v("Creative Outdoor Ads")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n                    Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("h6", { staticClass: "date" }, [_vm._v("31st January,2018")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "single-recent-blog-post item" }, [
+          _c("div", { staticClass: "thumb" }, [
+            _c("img", {
+              staticClass: "img-fluid",
+              attrs: { src: "img/b3.jpg", alt: "" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "details" }, [
+            _c("div", { staticClass: "tags" }, [
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Travel")])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Life Style")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "#" } }, [
+              _c("h4", { staticClass: "title" }, [
+                _vm._v("It's Classified How To Utilize Free")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n                    Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("h6", { staticClass: "date" }, [_vm._v("31st January,2018")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "single-recent-blog-post item" }, [
+          _c("div", { staticClass: "thumb" }, [
+            _c("img", {
+              staticClass: "img-fluid",
+              attrs: { src: "img/b1.jpg", alt: "" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "details" }, [
+            _c("div", { staticClass: "tags" }, [
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Travel")])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Life Style")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "#" } }, [
+              _c("h4", { staticClass: "title" }, [
+                _vm._v("Low Cost Advertising")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n                    Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("h6", { staticClass: "date" }, [_vm._v("31st January,2018")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "single-recent-blog-post item" }, [
+          _c("div", { staticClass: "thumb" }, [
+            _c("img", {
+              staticClass: "img-fluid",
+              attrs: { src: "img/b2.jpg", alt: "" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "details" }, [
+            _c("div", { staticClass: "tags" }, [
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Travel")])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Life Style")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "#" } }, [
+              _c("h4", { staticClass: "title" }, [
+                _vm._v("Creative Outdoor Ads")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n                    Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("h6", { staticClass: "date" }, [_vm._v("31st January,2018")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "single-recent-blog-post item" }, [
+          _c("div", { staticClass: "thumb" }, [
+            _c("img", {
+              staticClass: "img-fluid",
+              attrs: { src: "img/b3.jpg", alt: "" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "details" }, [
+            _c("div", { staticClass: "tags" }, [
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Travel")])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "#" } }, [_vm._v("Life Style")])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("a", { attrs: { href: "#" } }, [
+              _c("h4", { staticClass: "title" }, [
+                _vm._v("It's Classified How To Utilize Free")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n                    Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.\n                "
+              )
+            ]),
+            _vm._v(" "),
+            _c("h6", { staticClass: "date" }, [_vm._v("31st January,2018")])
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -47177,7 +47592,8 @@ module.exports = function(module) {
 
 var map = {
 	"./components/ExampleComponent.vue": "./resources/js/components/ExampleComponent.vue",
-	"./components/ImagesCompenent.vue": "./resources/js/components/ImagesCompenent.vue"
+	"./components/ImagesCompenent.vue": "./resources/js/components/ImagesCompenent.vue",
+	"./components/PaketComponent.vue": "./resources/js/components/PaketComponent.vue"
 };
 
 
@@ -47466,6 +47882,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/PaketComponent.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/components/PaketComponent.vue ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _PaketComponent_vue_vue_type_template_id_602e015f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PaketComponent.vue?vue&type=template&id=602e015f&scoped=true& */ "./resources/js/components/PaketComponent.vue?vue&type=template&id=602e015f&scoped=true&");
+/* harmony import */ var _PaketComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PaketComponent.vue?vue&type=script&lang=js& */ "./resources/js/components/PaketComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _PaketComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _PaketComponent_vue_vue_type_template_id_602e015f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _PaketComponent_vue_vue_type_template_id_602e015f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "602e015f",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/PaketComponent.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/PaketComponent.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/PaketComponent.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PaketComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./PaketComponent.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PaketComponent.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_PaketComponent_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/PaketComponent.vue?vue&type=template&id=602e015f&scoped=true&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/PaketComponent.vue?vue&type=template&id=602e015f&scoped=true& ***!
+  \***********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PaketComponent_vue_vue_type_template_id_602e015f_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./PaketComponent.vue?vue&type=template&id=602e015f&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/PaketComponent.vue?vue&type=template&id=602e015f&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PaketComponent_vue_vue_type_template_id_602e015f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_PaketComponent_vue_vue_type_template_id_602e015f_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/sass/app.scss":
 /*!*********************************!*\
   !*** ./resources/sass/app.scss ***!
@@ -47484,8 +47969,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! B:\laragon\www\PKM_Wukirsari\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! B:\laragon\www\PKM_Wukirsari\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\laragon\www\PKM_Wukirsari\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\laragon\www\PKM_Wukirsari\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
