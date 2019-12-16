@@ -32,6 +32,8 @@ Route::get('/clear-cache', function() {Artisan::call('cache:clear');    return "
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/get/{p}', 'MainController@get')->name('get');
+Route::get('/coba', 'MainController@index')->name('coba');
 
 Route::get('/admin/dashboard', function(){
     return 'Wellcome Admin!';

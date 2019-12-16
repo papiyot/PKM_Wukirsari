@@ -42,4 +42,19 @@ files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(
 
 const app = new Vue({
     el: '#app',
+    data:{
+        MySql: {
+
+        }
+    },
+    methods: {
+        getMysql(url, attachTo,params = null) {
+            let vm = this;
+            return new Promise((resolve, reject) => {
+                return axios.get(url,{params: params})
+                    .then((res) => resolve(vm.MySql[attachTo] = res.data))
+                    .catch(error => reject(console.log(error)));
+            });
+        },
+    }
 });

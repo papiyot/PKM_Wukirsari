@@ -16,6 +16,41 @@ class Helper
     public static function findData($table,$field,$value,$result){
         return DB::table($table)->where($field,'=',$value)->first()->$result;
     }
+    public static function allData($p, $join=null, $where=null){
+        $ex = [];
+        $column = [];
+        array_push($ex, [$p . '_created_at', $p . '_updated_at', $p . '_deleted_at', $p . '_by']);
+        $data = new \stdClass();
+        try {
+            $query = DB::table($p)->select($p . '.*');
+            if ($where)
+            {
+                foreach ($where as $key => $value) {
+                    $query->where($key,$value);
+                }
+            }
+            if ($join) {
+                foreach ($join as $value) {
+                    $query->join($value, $value . '_id', '=', $p . '_' . $value . '_id');
+                    (Schema::hasColumn($value, $value . '_nama')) ? $query->addSelect($value . '_nama') : null;
+                    array_push($ex, [$p . '_' . $value . '_id', $value . '_by', $value . '_id']);
+                }
+            }
+            $data->data = $query->get();
+            foreach ($data->data[0] as $k => $val) {
+                array_push($column, $k);
+            }
+            foreach ($ex as $v) {
+                $column = array_merge(array_diff($column, $v));
+            }
+            $data->column = $column;
+            $data->table = $p;
+            $data->join = $join;
+        } catch (\Exception $e) {
+            return response()->json($e, 500);
+        }
+        return response()->json($data, 200);
+    }
 
     public static function rp($p)
     {
