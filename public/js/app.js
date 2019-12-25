@@ -1960,17 +1960,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ObjekComponent",
   props: ['set'],
@@ -20676,8 +20665,10 @@ var render = function() {
       { staticClass: "active-recent-blog-carusel" },
       _vm._l(this.set, function(objek) {
         return _c("div", [
-          _c("div", { staticClass: "single-recent-blog-post item" }, [
-            _c("div", { staticClass: "thumb" }, [
+          _c("div", { staticClass: "single-destination relative" }, [
+            _c("div", { staticClass: "thumb relative" }, [
+              _c("div", { staticClass: "overlay overlay-bg" }),
+              _vm._v(" "),
               _c("img", {
                 attrs: {
                   src: "galeri/objek/" + objek.objek_images,
@@ -20688,46 +20679,14 @@ var render = function() {
               })
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "details" }, [
-              _c("div", { staticClass: "tags" }, [
-                _c("ul", [
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(_vm._s(objek.desa_nama))
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v(_vm._s(objek.objek_nama))
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _c("a", { attrs: { href: "#" } }, [
-                      _vm._v("Rp. " + _vm._s(objek.objek_biaya))
-                    ])
-                  ])
-                ])
+            _c("div", { staticClass: "desc" }, [
+              _c("a", { staticClass: "price-btn", attrs: { href: "#" } }, [
+                _vm._v("Rp. " + _vm._s(objek.objek_biaya))
               ]),
               _vm._v(" "),
-              _c("a", { attrs: { href: "#" } }, [
-                _c("h4", { staticClass: "title" }, [
-                  _vm._v(_vm._s(objek.objek_nama))
-                ])
-              ]),
+              _c("h4", [_vm._v(_vm._s(objek.objek_nama))]),
               _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                        " +
-                    _vm._s(objek.objek_letak_diskripsi) +
-                    "\n                    "
-                )
-              ]),
-              _vm._v(" "),
-              _c("h6", { staticClass: "date" }, [
-                _vm._v(_vm._s(objek.objek_alamat))
-              ])
+              _c("p", [_vm._v(_vm._s(objek.desa_nama))])
             ])
           ])
         ])
