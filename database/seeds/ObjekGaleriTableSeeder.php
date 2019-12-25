@@ -14,7 +14,7 @@ class ObjekGaleriTableSeeder extends Seeder
         for ($x=1; $x<=10; $x++) {
             DB::table('objek_galeri')->insert([
                 'objek_galeri_objek_id' => $x,
-                'objek_galeri_letak' => 'foto' . $x,
+                'objek_galeri_letak' => 'foto' . $x.'.jpg',
             ]);
         }
     }

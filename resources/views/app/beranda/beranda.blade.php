@@ -443,12 +443,12 @@
         <div class="row d-flex justify-content-center">
             <div class="menu-content pb-60 col-lg-9">
                 <div class="title text-center">
-                    <h1 class="mb-10">Latest from Our Blog</h1>
-                    <p>With the exception of Nietzsche, no other madman has contributed so much to human sanity as has.</p>
+                    <h1 class="mb-10">Daftar Objek Wisata</h1>
+                    <p>Temukan Objek yang anda sukai.</p>
                 </div>
             </div>
         </div>
-       <paket-component></paket-component>
+       <objek-component :set="{{ $data->objek->original->data }}" ></objek-component>
     </div>
 </section>
 <!-- End recent-blog Area -->

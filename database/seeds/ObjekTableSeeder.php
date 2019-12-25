@@ -19,6 +19,7 @@ class ObjekTableSeeder extends Seeder
                 'objek_alamat' => 'Wukirsari ' . $x,
                 'objek_letak_diskripsi' => 'ini adalah desa wisata ' . $x,
                 'objek_biaya' => 2000*$x,
+                'objek_images' => 'foto' . $x.'.jpg',
             ]);
         }
     }

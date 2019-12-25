@@ -1,6 +1,7 @@
 <template>
             <div class="row">
                 <div class="active-recent-blog-carusel">
+                    <div v-for="objek in this.set">
                     <div class="single-recent-blog-post item">
                         <div class="thumb">
                             <img class="img-fluid" src="img/b1.jpg" alt="">
@@ -16,122 +17,13 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="#"><h4 class="title">Low Cost Advertising</h4></a>
+                            <a href="#"><h4 class="title">{{objek.objek_nama}}</h4></a>
                             <p>
-                                Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
+                                {{objek.objek_letak_diskripsi}}
                             </p>
                             <h6 class="date">31st January,2018</h6>
                         </div>
                     </div>
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/b2.jpg" alt="">
-                        </div>
-                        <div class="details">
-                            <div class="tags">
-                                <ul>
-                                    <li>
-                                        <a href="#">Travel</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Life Style</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a href="#"><h4 class="title">Creative Outdoor Ads</h4></a>
-                            <p>
-                                Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-                            </p>
-                            <h6 class="date">31st January,2018</h6>
-                        </div>
-                    </div>
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/b3.jpg" alt="">
-                        </div>
-                        <div class="details">
-                            <div class="tags">
-                                <ul>
-                                    <li>
-                                        <a href="#">Travel</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Life Style</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a href="#"><h4 class="title">It's Classified How To Utilize Free</h4></a>
-                            <p>
-                                Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-                            </p>
-                            <h6 class="date">31st January,2018</h6>
-                        </div>
-                    </div>
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/b1.jpg" alt="">
-                        </div>
-                        <div class="details">
-                            <div class="tags">
-                                <ul>
-                                    <li>
-                                        <a href="#">Travel</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Life Style</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a href="#"><h4 class="title">Low Cost Advertising</h4></a>
-                            <p>
-                                Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-                            </p>
-                            <h6 class="date">31st January,2018</h6>
-                        </div>
-                    </div>
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/b2.jpg" alt="">
-                        </div>
-                        <div class="details">
-                            <div class="tags">
-                                <ul>
-                                    <li>
-                                        <a href="#">Travel</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Life Style</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a href="#"><h4 class="title">Creative Outdoor Ads</h4></a>
-                            <p>
-                                Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-                            </p>
-                            <h6 class="date">31st January,2018</h6>
-                        </div>
-                    </div>
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/b3.jpg" alt="">
-                        </div>
-                        <div class="details">
-                            <div class="tags">
-                                <ul>
-                                    <li>
-                                        <a href="#">Travel</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Life Style</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a href="#"><h4 class="title">It's Classified How To Utilize Free</h4></a>
-                            <p>
-                                Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-                            </p>
-                            <h6 class="date">31st January,2018</h6>
-                        </div>
                     </div>
 
                 </div>
@@ -148,6 +40,9 @@
 
             };
         },
+        created() {
+            console.log('ini data set', this.set);
+        }
     }
 </script>
 

@@ -21,6 +21,7 @@ class CreateObjekTable extends Migration
             $table->text('objek_alamat')->nullable();
             $table->text('objek_letak_diskripsi')->nullable();
             $table->float('objek_biaya');
+            $table->string('objek_images');
             $table->timestamps();
         });
     }
