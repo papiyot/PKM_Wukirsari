@@ -1957,9 +1957,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "ObjekComponent",
   props: ['set'],
@@ -2006,26 +2003,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "PaketComponent",
-  props: ['set'],
+  props: ['paket', 'paket_detail'],
   data: function data() {
     return {
-      paket: ""
+      apa: ""
     };
   },
   created: function created() {
-    console.log('ini data set', this.set);
+    console.log('ini data set', this.paket);
+  },
+  methods: {
+    filterKat: function filterKat(a) {
+      var res = this.paket_detail;
+
+      if (a) {
+        return res.filter(function (m) {
+          return m.paket_detail_paket_id === a;
+        });
+      }
+
+      return res;
+    }
   }
 });
 
@@ -20721,62 +20721,48 @@ var render = function() {
     _c(
       "div",
       { staticClass: "active-recent-blog-carusel" },
-      _vm._l(this.set, function(objek) {
+      _vm._l(this.paket, function(vpaket) {
         return _c("div", [
-          _c("div", { staticClass: "single-recent-blog-post item" }, [
-            _vm._m(0, true),
-            _vm._v(" "),
-            _c("div", { staticClass: "details" }, [
-              _vm._m(1, true),
+          _c(
+            "div",
+            { staticClass: "single-price" },
+            [
+              _c("h4", [_vm._v(_vm._s(vpaket.paket_nama))]),
               _vm._v(" "),
-              _c("a", { attrs: { href: "#" } }, [
-                _c("h4", { staticClass: "title" }, [
-                  _vm._v(_vm._s(objek.objek_nama))
-                ])
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                    " +
-                    _vm._s(objek.objek_letak_diskripsi) +
-                    "\n                "
+              _vm._l(_vm.filterKat(vpaket.paket_id), function(pd) {
+                return _c(
+                  "ul",
+                  { key: pd.paket_detail_id, staticClass: "price-list" },
+                  [
+                    _c(
+                      "li",
+                      {
+                        staticClass:
+                          "d-flex justify-content-between align-items-center"
+                      },
+                      [
+                        _c("span", [_vm._v(_vm._s(pd.objek_nama))]),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          { staticClass: "price-btn", attrs: { href: "#" } },
+                          [_vm._v("Rp. " + _vm._s(pd.paket_detail_biaya))]
+                        )
+                      ]
+                    )
+                  ]
                 )
-              ]),
-              _vm._v(" "),
-              _c("h6", { staticClass: "date" }, [_vm._v("31st January,2018")])
-            ])
-          ])
+              })
+            ],
+            2
+          )
         ])
       }),
       0
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "thumb" }, [
-      _c("img", {
-        staticClass: "img-fluid",
-        attrs: { src: "img/b1.jpg", alt: "" }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "tags" }, [
-      _c("ul", [
-        _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Travel")])]),
-        _vm._v(" "),
-        _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Life Style")])])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

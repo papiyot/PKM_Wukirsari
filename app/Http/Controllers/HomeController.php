@@ -26,6 +26,8 @@ class HomeController extends Controller
     {
         $data = new \stdClass();
         $data->objek = Helper::allData('objek',['desa']);
+        $data->paket = Helper::allData('paket');
+        $data->paket_detail = Helper::allData('paket_detail',['paket', 'objek']);
 //        return $data;
         return view('app.beranda.beranda', compact('data'));
     }

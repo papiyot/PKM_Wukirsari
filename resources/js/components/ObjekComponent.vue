@@ -2,7 +2,6 @@
     <div class="row">
         <div class="active-recent-blog-carusel">
             <div v-for="objek in this.set">
-
                     <div class="single-destination relative">
                         <div class="thumb relative">
                             <div class="overlay overlay-bg"></div>
@@ -14,10 +13,7 @@
                             <p>{{objek.desa_nama}}</p>
                         </div>
                     </div>
-
-
             </div>
-
         </div>
     </div>
 </template>

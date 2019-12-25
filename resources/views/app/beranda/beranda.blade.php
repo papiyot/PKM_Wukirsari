@@ -48,173 +48,36 @@
 </section>
 <!-- End banner Area -->
 
-<!-- Start popular-destination Area -->
+<!-- Start blog Area -->
 <section class="popular-destination-area section-gap">
     <div class="container">
         <div class="row d-flex justify-content-center">
             <div class="menu-content pb-70 col-lg-8">
                 <div class="title text-center">
-                    <h1 class="mb-10">Popular Destinations</h1>
-                    <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day.</p>
+                    <h1 class="mb-10">Daftar Objek Wisata</h1>
+                    <p>Temukan Objek yang anda sukai.</p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="single-destination relative">
-                    <div class="thumb relative">
-                        <div class="overlay overlay-bg"></div>
-                        <img class="img-fluid" src="img/d1.jpg" alt="">
-                    </div>
-                    <div class="desc">
-                        <a href="#" class="price-btn">$150</a>
-                        <h4>Mountain River</h4>
-                        <p>Paraguay</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="single-destination relative">
-                    <div class="thumb relative">
-                        <div class="overlay overlay-bg"></div>
-                        <img class="img-fluid" src="img/d2.jpg" alt="">
-                    </div>
-                    <div class="desc">
-                        <a href="#" class="price-btn">$250</a>
-                        <h4>Dream City</h4>
-                        <p>Paris</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="single-destination relative">
-                    <div class="thumb relative">
-                        <div class="overlay overlay-bg"></div>
-                        <img class="img-fluid" src="img/d3.jpg" alt="">
-                    </div>
-                    <div class="desc">
-                        <a href="#" class="price-btn">$350</a>
-                        <h4>Cloud Mountain</h4>
-                        <p>Sri Lanka</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <objek-component :set="{{ $data->objek->original->data }}" ></objek-component>
     </div>
 </section>
-<!-- End popular-destination Area -->
-
-
-<!-- Start price Area -->
+<!-- End recent-blog Area -->
+<!-- Start blog Area -->
 <section class="price-area section-gap">
     <div class="container">
         <div class="row d-flex justify-content-center">
-            <div class="menu-content pb-70 col-lg-8">
+            <div class="menu-content pb-60 col-lg-9">
                 <div class="title text-center">
-                    <h1 class="mb-10">We Provide Affordable Prices</h1>
-                    <p>Well educated, intellectual people, especially scientists at all times demonstrate considerably.</p>
+                    <h1 class="mb-10">Daftar Paket Wisata</h1>
+                    <p>Temukan paket yang anda sukai.</p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="single-price">
-                    <h4>Cheap Packages</h4>
-                    <ul class="price-list">
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>New York</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Maldives</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Sri Lanka</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Nepal</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Thiland</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Singapore</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="single-price">
-                    <h4>Luxury Packages</h4>
-                    <ul class="price-list">
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>New York</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Maldives</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Sri Lanka</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Nepal</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Thiland</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Singapore</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="single-price">
-                    <h4>Camping Packages</h4>
-                    <ul class="price-list">
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>New York</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Maldives</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Sri Lanka</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Nepal</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Thiland</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                        <li class="d-flex justify-content-between align-items-center">
-                            <span>Singapore</span>
-                            <a href="#" class="price-btn">$1500</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <paket-component :paket="{{ $data->paket->original->data }}" :paket_detail="{{ $data->paket_detail->original->data }}"></paket-component>
     </div>
 </section>
-<!-- End price Area -->
-
+<!-- End recent-blog Area -->
 
 <!-- Start other-issue Area -->
 <section class="other-issue-area section-gap">
@@ -222,8 +85,8 @@
         <div class="row d-flex justify-content-center">
             <div class="menu-content pb-70 col-lg-9">
                 <div class="title text-center">
-                    <h1 class="mb-10">Other issues we can help you with</h1>
-                    <p>We all live in an age that belongs to the young at heart. Life that is.</p>
+                    <h1 class="mb-10">Layanan yang anda inginkan</h1>
+{{--                    <p>We all live in an age that belongs to the young at heart. Life that is.</p>--}}
                 </div>
             </div>
         </div>
@@ -292,8 +155,8 @@
         <div class="row d-flex justify-content-center">
             <div class="menu-content pb-70 col-lg-8">
                 <div class="title text-center">
-                    <h1 class="mb-10">Testimonial from our Clients</h1>
-                    <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from </p>
+                    <h1 class="mb-10">Respon Pengunjung</h1>
+                    <p>Senyuman anda adalah tujuan kami </p>
                 </div>
             </div>
         </div>
@@ -419,13 +282,11 @@
         <div class="row align-items-center justify-content-end">
             <div class="col-lg-6 col-md-12 home-about-left">
                 <h1>
-                    Did not find your Package? <br>
-                    Feel free to ask us. <br>
-                    We‘ll make it for you
+                    Tidak menemukan Paket Anda? <br>
+                    Silakan bertanya kepada kami. <br>
+                    Kami akan membuatnya untuk Anda
                 </h1>
-                <p>
-                    inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.
-                </p>
+
                 <a href="#" class="primary-btn text-uppercase">request custom price</a>
             </div>
             <div class="col-lg-6 col-md-12 home-about-right no-padding">
@@ -437,21 +298,7 @@
 <!-- End home-about Area -->
 
 
-<!-- Start blog Area -->
-<section class="recent-blog-area section-gap">
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="menu-content pb-60 col-lg-9">
-                <div class="title text-center">
-                    <h1 class="mb-10">Daftar Objek Wisata</h1>
-                    <p>Temukan Objek yang anda sukai.</p>
-                </div>
-            </div>
-        </div>
-       <objek-component :set="{{ $data->objek->original->data }}" ></objek-component>
-    </div>
-</section>
-<!-- End recent-blog Area -->
+
 
 @endsection
 

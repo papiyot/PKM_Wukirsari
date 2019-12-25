@@ -1,31 +1,17 @@
 <template>
             <div class="row">
                 <div class="active-recent-blog-carusel">
-                    <div v-for="objek in this.set">
-                    <div class="single-recent-blog-post item">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/b1.jpg" alt="">
-                        </div>
-                        <div class="details">
-                            <div class="tags">
-                                <ul>
-                                    <li>
-                                        <a href="#">Travel</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Life Style</a>
+                        <div  v-for="vpaket in this.paket">
+                            <div class="single-price">
+                                <h4>{{vpaket.paket_nama}}</h4>
+                                <ul class="price-list" v-for="pd in filterKat(vpaket.paket_id)" :key="pd.paket_detail_id">
+                                    <li class="d-flex justify-content-between align-items-center">
+                                        <span>{{pd.objek_nama}}</span>
+                                        <a href="#" class="price-btn">Rp. {{pd.paket_detail_biaya}}</a>
                                     </li>
                                 </ul>
                             </div>
-                            <a href="#"><h4 class="title">{{objek.objek_nama}}</h4></a>
-                            <p>
-                                {{objek.objek_letak_diskripsi}}
-                            </p>
-                            <h6 class="date">31st January,2018</h6>
                         </div>
-                    </div>
-                    </div>
-
                 </div>
             </div>
 </template>
@@ -33,15 +19,24 @@
 <script>
     export default {
         name: "PaketComponent",
-        props:['set'],
+        props:['paket','paket_detail'],
         data: function(){
             return{
-                paket:"",
+                apa:"",
 
             };
         },
         created() {
-            console.log('ini data set', this.set);
+            console.log('ini data set', this.paket);
+        },
+        methods: {
+            filterKat(a) {
+                const res = this.paket_detail;
+                if (a) {
+                    return res.filter(m => m.paket_detail_paket_id === a)
+                }
+                return res
+            },
         }
     }
 </script>
